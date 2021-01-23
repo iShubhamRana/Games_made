@@ -1,0 +1,122 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: red;
+}
+.gameContainer{
+     background: url("cartoon-background-2633730_1280.jpg");
+     background-size: 100vw 100vh;
+     background-repeat: no-repeat;
+     width: 100vw;
+     height: 100vh;
+    
+}
+.dino{
+    background-image: url("hero_dino-removebg-preview.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:120px;
+    width:140px;
+    display: inline-block;
+    position:absolute;
+    bottom: 130px;
+    left:50px;
+}
+.obstacle{
+    background: url("5c81956b2628980318753311-removebg-preview.png");
+    background-size: cover;
+    width:280px;
+    height: 180px;
+    position: absolute;
+    right: 10px;
+    bottom:110px;
+}
+.jumpDino{
+    
+    animation: dinoJump 0.6s linear;
+}
+.animateObstacle{
+    
+    animation: obstacleMove 5s linear infinite;
+}
+@keyframes dinoJump{
+    0%{
+         bottom: 130px;
+    }
+    50%{
+        bottom:550px;
+    }
+    100%{
+        bottom:130px;
+    }
+}
+@keyframes obstacleMove{
+    0%{
+      left:  100vw;
+    }
+    25%{
+        left: 75vw;
+    }
+    50%{
+      left:  50vw;
+    }
+    75%{
+        left: 25vw;
+    }
+    100%{
+       left: 0vw;
+    }
+
+}
+.gameOver{
+    font-size: 300%;
+    position: absolute;
+    top:100px;
+    left:630px;
+    color:red;
+    text-shadow: 2px 2px black;
+    visibility: hidden;
+}
+#scoreCount{
+    font-size: 300%;
+    position: absolute;
+    top: 20px;
+    left:30px;
+    color: red;
+    text-shadow: 2px 2px black;
+}
+#name{
+    font-size: 500%;
+    position: absolute;
+    top:10px;
+    left:580px;
+    color: rgb(127, 226, 28);
+    text-shadow: 3px 3px black ;
+}
+.instructions{
+    font-size: 150%;
+    color: blanchedalmond;
+    text-shadow: 2px 2px black;
+
+}
+#movements{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+#tip{
+    position: absolute;
+    bottom: 50px;
+    left:500px;
+
+}
+#author{
+    font-size: 200%;
+    position: absolute;
+    right: 30px;
+    top:20px;
+    color: red;
+    text-shadow: 2px 2px black;
+}
